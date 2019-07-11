@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from "react";
 import logo from './logo.svg';
 import './App.css';
 
 //import components
-//import Card from "./components/..."
-import smurfs from "./smurfs.json"
+import SmurfCard from "./components/SmurfCard";
+import Title from "./components/Title";
+import Wrapper from "./components/Wrapper"
+import smurfs from "./smurfs.json";
 
 
 class App extends Component {
