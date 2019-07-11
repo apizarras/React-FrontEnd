@@ -12,12 +12,22 @@ import smurfs from "./smurfs.json";
 class App extends Component {
   state = {
     smurfs
+    random: 0
   };
 
   removeSmurf = id => {
     const smurfs = this.state.smurfs.filter(smurf => smurf.id !== id);
     this.setState({smurfs});
   };
+
+  randomizeCards = () => {
+
+      const min = 1;
+      const max = 12;
+      const rand = min + Math.random() * (max - min);
+      this.setState({ random: this.state.random + rand });
+
+  }
 
   render() {
     return (

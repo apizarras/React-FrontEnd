@@ -1,4 +1,4 @@
 [build]
 base = "clicky-game/"
-publish = "clicky-game/build/"
+publish = "clicky-game/public/"
 command = "npm run build"
